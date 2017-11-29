@@ -1,0 +1,2 @@
+# JEKAPOTROSHITEL
+Drink singleton
