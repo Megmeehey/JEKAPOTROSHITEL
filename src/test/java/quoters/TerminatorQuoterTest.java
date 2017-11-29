@@ -1,5 +1,6 @@
 package quoters;
 
+import lombok.Setter;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 import org.junit.runner.RunWith;
@@ -12,11 +13,14 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration(locations = {"/context.xml"})
 public class TerminatorQuoterTest {
 
-    @Autowired
+    @Setter(onMethod=@__(@Autowired))
     Quoter terminator;
 
     @Test
-    public void sayQuoteTest() {
-        terminator.sayQuote();
+    public void sayQuoteTest() throws InterruptedException {
+        while (true) {
+            Thread.sleep(100);
+            terminator.sayQuote();
+        }
     }
 }
