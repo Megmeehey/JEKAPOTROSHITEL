@@ -5,5 +5,5 @@ import lombok.Setter;
 
 public class ProfilingController implements ProfilingControllerMBean {
     @Getter @Setter
-    private boolean enabled;
+    private boolean enabled = true;
 }

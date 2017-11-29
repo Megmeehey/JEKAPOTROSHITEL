@@ -13,14 +13,11 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration(locations = {"/context.xml"})
 public class TerminatorQuoterTest {
 
-    @Setter(onMethod=@__(@Autowired))
+    @Setter(onMethod = @__(@Autowired))
     Quoter terminator;
 
     @Test
     public void sayQuoteTest() throws InterruptedException {
-        while (true) {
-            Thread.sleep(100);
-            terminator.sayQuote();
-        }
+        terminator.sayQuote();
     }
 }

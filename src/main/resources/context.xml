@@ -9,6 +9,8 @@
 
     <bean class="quoters.ProfilingHandlerBeanPostProcessor"/>
 
+    <bean class="quoters.PostProxyContextListener"/>
+
     <bean class="quoters.TerminatorQuoter" id="terminatorQuoter">
         <property name="message" value="I'll be back!"/>
     </bean>
