@@ -10,7 +10,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @Category(UnitTest.class)
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"/context.xml"})
-public class TerminatorQuoterImplTest {
+public class TerminatorQuoterTest {
 
     @Autowired
     Quoter terminator;
