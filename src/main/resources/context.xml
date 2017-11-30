@@ -11,6 +11,8 @@
 
     <bean class="quoters.PostProxyContextListener"/>
 
+    <bean class="quoters.ProfilingController"/>
+
     <bean class="quoters.DeprecationHandlerBeanFactoryPostProcessor"/>
 
     <bean class="quoters.TerminatorQuoter" id="terminatorQuoter">
