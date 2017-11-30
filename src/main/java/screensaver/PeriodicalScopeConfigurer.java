@@ -33,7 +33,6 @@ public class PeriodicalScopeConfigurer implements Scope {
 
     @Override
     public void registerDestructionCallback(String s, Runnable runnable) {
-
     }
 
     @Override
