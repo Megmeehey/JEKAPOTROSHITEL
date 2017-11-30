@@ -2,7 +2,9 @@ package quoters;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
+@Category(IntegrationTest.class)
 public class PropertyFileApplicationContextTest {
     public static PropertyFileApplicationContext context;
 
